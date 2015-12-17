@@ -1,8 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var TestButton = require('./TestButton.js');
+var ScriptCard = require('./script-card.js');
 
 ReactDOM.render(
-  <TestButton />,
+  <ScriptCard />,
   document.getElementById('example')
 );

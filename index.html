@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
-  <title>Hello React!</title>
+    <meta charset="UTF-8" />
+    <link href="css/flexboxgrid.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500" rel="stylesheet" type="text/css">
+    <title>Hello React!</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            background-color: rgba(119,136,153, 100);
+            color: #ffffff;
+            margin-top: -8px;
+            padding: 60px;
+            margin-bottom: 30px;
+        }
+
+        .header h1{
+            font-weight: 500;
+        }
+
+        .header h3{
+            font-weight: 100;
+        }
+    </style>
 </head>
 <body>
-  <div id="example"></div>
-  <script src="build/bundle.js"></script>
+
+<div class="row">
+    <div class="header col-xs-12 center-xs">
+        <h1>SCRIPTER</h1>
+        <h3>simple scripts to make your everyday easier</h3>
+    </div>
+</div>
+<div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3">
+            <div id="example"></div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 center-xs">
+        Test
+    </div>
+    <div class="col-xs-12 col-sm-6 center-xs" style="background-color: #b4b472;">
+        Second
+    </div>
+</div>
+
+<script src="build/bundle.js"></script>
 </body>
 </html>
