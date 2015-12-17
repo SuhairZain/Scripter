@@ -1,7 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var TestButton = require('./TestButton.js');
 
 ReactDOM.render(
-  <h1>React Works! Along with Babel</h1>,
+  <TestButton />,
   document.getElementById('example')
 );
