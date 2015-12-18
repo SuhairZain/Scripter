@@ -24923,7 +24923,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var ScriptCard = require('./script-card.js');
 
-ReactDOM.render(React.createElement(ScriptCard, null), document.getElementById('example'));
+ReactDOM.render(React.createElement(ScriptCard, { title: 'Test title' }), document.getElementById('scripts'));
 
 },{"./script-card.js":222,"react":220,"react-dom":58}],222:[function(require,module,exports){
 const React = require('react');
@@ -24933,12 +24933,19 @@ const CardHeader = require('material-ui/lib/card/card-header');
 const ScriptCard = React.createClass({
     displayName: 'ScriptCard',
 
+    propTypes: {
+        title: React.PropTypes.number
+    },
     render() {
         return React.createElement(
-            Card,
-            null,
-            React.createElement(CardHeader, {
-                title: 'Title' })
+            'div',
+            { className: 'col-lg-3' },
+            React.createElement(
+                Card,
+                null,
+                React.createElement(CardHeader, {
+                    title: this.props.title })
+            )
         );
     }
 });
