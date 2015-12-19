@@ -24927,7 +24927,7 @@ const ScriptCard = React.createClass({
                 React.createElement(
                     CardMedia,
                     { overlay: React.createElement(CardTitle, { title: this.props.data.title, subtitle: this.props.data.subtitle }) },
-                    React.createElement('img', { src: 'file:///mnt/Data/Workspace/react/scripter/images/header_bg.jpg' })
+                    React.createElement('img', { src: "images/media/" + this.props.data.id + ".jpg" })
                 )
             )
         );

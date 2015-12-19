@@ -12,7 +12,7 @@ const ScriptCard = React.createClass({
         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <Card>
                 <CardMedia overlay={<CardTitle title={this.props.data.title} subtitle={this.props.data.subtitle}/>}>
-                           <img src="file:///mnt/Data/Workspace/react/scripter/images/header_bg.jpg"/>
+                           <img src={"images/media/" + this.props.data.id + ".jpg"}/>
                 </CardMedia>
             </Card>
         </div>
