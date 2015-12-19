@@ -8,7 +8,7 @@ const ScriptCard = require('./script-card');
 const ScriptCardGrid = React.createClass({
     render() {
         function getCard(cardData) {
-            return <ScriptCard key={cardData.key} data={cardData} />
+            return <ScriptCard key={cardData.id} data={cardData} />
         }
 
         return <div className="row">{this.props.data.map(getCard)}</div>;
